@@ -1,0 +1,65 @@
+@import "./colors.scss";
+
+footer {
+    background-color: $first;
+    height: 200px;
+    width: 100%;
+    display: grid;
+    padding: 2rem;
+    color: $dark;
+    grid-template-columns: 4fr 1fr;
+
+    div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+    h1{
+        font:700 2rem $text1;
+        text-transform: uppercase;
+        color: $third;
+    }
+    p{
+        font: 500 1.2rem $third;
+    }
+    h5{
+        font: 300 2rem $text1;
+        margin: 1rem 0;
+        text-align: center;
+    }
+   div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a{
+            color: $dark;
+            font: 900 1rem $text2;
+            &:hover{
+                color: $third;
+            }
+        }
+    }
+}
+  
+}
+
+@media screen and (max-width:760px) {
+    footer{
+        div{
+            h5{
+                margin-left: -80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    footer{
+        div{
+            h5{
+                display: none;
+
+            }
+        }
+    }
+}

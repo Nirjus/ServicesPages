@@ -1,0 +1,148 @@
+@import "./colors.scss";
+.services{
+   display: flex;
+padding: 4px;
+justify-content: space-between;
+height: 90vh;
+width: 100%;
+    .carosol{
+        height: 60vh;
+        width: 60%;
+        margin:0 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+    }
+   .plans{
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 60px;
+    background-image: linear-gradient(90deg,$third,#5e5aea);
+    border-radius: 130px 0 0 130px;
+    padding: 2rem;
+    h1{
+        color: #fff;
+        margin: 0 200px;
+        text-decoration: underline;
+        text-transform: uppercase;
+     
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 10px;
+        .icons{
+            font-size: 60px;
+            color:rgb(0, 247, 255);
+            transition: 0.4s;
+            &:hover{
+                color: rgb(255, 9, 116);
+                cursor: pointer;
+            }
+        }
+
+    p{
+        font-size: 20px;
+        color: #fff;
+        padding-left: 5rem;
+        &:hover{
+            text-transform: uppercase;
+        }
+    }
+    }
+   }
+}
+
+@media screen and (max-width:1200px) {
+   .services{
+    .carosol{
+      width: 120%;
+     margin: 50px;
+    }
+   .plans{
+    height: 70vh;
+    h1{
+        margin: 0 100px;
+    }
+   }
+   }
+}
+@media screen and (max-width:1000px) {
+    .services{
+      .carosol{
+        width: 150%;
+        margin: 30px;
+      }
+      .plans{
+        height: 60vh;
+        padding: 1rem;
+      }
+    }
+ }
+ @media screen and (max-width:800px) {
+    .services{
+        display: block;
+        height: 120vh;
+        .carosol{
+            width: 100%;
+        }
+        .plans{
+            margin: auto;
+            width: 80%;
+            height: 50vh;
+            display: block;
+            margin-right: 60px;
+            background-image: linear-gradient(90deg,$third,#5e5aea);
+            border-radius: 130px 130px 0 0;
+            padding: 2rem;
+            h1{
+                margin:0 150px
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width:500px) {
+    .services{
+        display: block;
+        height: 90vh;
+        .carosol{
+            height: 50vh;
+            width: 100%;
+            margin: auto;
+                div{
+                img{
+              width: 100%;
+              height: 50vh;
+                }
+            }
+        }
+        .plans{
+            margin:auto;
+            width: 90%;
+            height: 40vh;
+            display: block;
+            background-image: linear-gradient(90deg,$third,#5e5aea);
+            border-radius: 130px 130px 0 0;
+            padding: 1rem;
+            h1{
+                margin:0 100px
+            }
+            div{
+                margin: 2px;
+                padding: 5px;
+                .icons{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+ }
+ 
